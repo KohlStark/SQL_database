@@ -1,0 +1,319 @@
+
+Table RESTAURANT_TABLE created.
+
+No errors.
+
+Table BUSSERS created.
+
+No errors.
+
+Table HOSTS created.
+
+No errors.
+
+Table BARTENDERS created.
+
+No errors.
+
+Table COOKS created.
+
+No errors.
+
+Table SERVERS created.
+
+No errors.
+
+Table MANAGERS created.
+
+No errors.
+Name            Null?    Type         
+--------------- -------- ------------ 
+TNAME           NOT NULL NUMBER(38)   
+TTIMESTAMP      NOT NULL DATE         
+NO_OF_CUSTOMERS NOT NULL NUMBER(38)   
+CHECK_AMT       NOT NULL FLOAT(126)   
+FOOD            NOT NULL VARCHAR2(50) 
+DRINKS          NOT NULL VARCHAR2(50) 
+Name          Null?    Type         
+------------- -------- ------------ 
+BSSN          NOT NULL NUMBER(38)   
+HOURS_WORKED  NOT NULL FLOAT(126)   
+TNAME                  NUMBER(38)   
+TTIMESTAMP             DATE         
+FOOD_BUSSED   NOT NULL VARCHAR2(50) 
+DRINKS_BUSSED NOT NULL VARCHAR2(50) 
+TABLES_BUSSED NOT NULL NUMBER(38)   
+Name         Null?    Type       
+------------ -------- ---------- 
+HSSN         NOT NULL NUMBER(38) 
+HOURS_WORKED NOT NULL FLOAT(126) 
+TNAME                 NUMBER(38) 
+TTIMESTAMP            DATE       
+TABLES_SAT   NOT NULL NUMBER(38) 
+Name           Null?    Type         
+-------------- -------- ------------ 
+TSSN           NOT NULL NUMBER(38)   
+HOURS_WORKED   NOT NULL FLOAT(126)   
+TNAME                   NUMBER(38)   
+TTIMESTAMP              DATE         
+FOOD_ORDERED   NOT NULL VARCHAR2(50) 
+DRINKS_ORDERED NOT NULL VARCHAR2(50) 
+DRINKS_MADE    NOT NULL NUMBER(38)   
+Name            Null?    Type         
+--------------- -------- ------------ 
+CSSN            NOT NULL NUMBER(38)   
+HOURS_WORKED    NOT NULL FLOAT(126)   
+TNAME                    NUMBER(38)   
+TTIMESTAMP               DATE         
+FOOD_MADE       NOT NULL VARCHAR2(50) 
+ORDERS_PREPARED NOT NULL NUMBER(38)   
+Name           Null?    Type         
+-------------- -------- ------------ 
+SSSN           NOT NULL NUMBER(38)   
+HOURS_WORKED   NOT NULL FLOAT(126)   
+TNAME                   NUMBER(38)   
+TTIMESTAMP              DATE         
+ORDERS         NOT NULL NUMBER(38)   
+BSSN           NOT NULL NUMBER(38)   
+HSSN           NOT NULL NUMBER(38)   
+FOOD_ORDERED   NOT NULL VARCHAR2(50) 
+DRINKS_ORDERED NOT NULL VARCHAR2(50) 
+TSSN           NOT NULL NUMBER(38)   
+SALES          NOT NULL FLOAT(126)   
+Name         Null?    Type       
+------------ -------- ---------- 
+MSSN         NOT NULL NUMBER(38) 
+HOURS_WORKED NOT NULL FLOAT(126) 
+HSSN         NOT NULL NUMBER(38) 
+BSSN         NOT NULL NUMBER(38) 
+TSSN         NOT NULL NUMBER(38) 
+SSSN         NOT NULL NUMBER(38) 
+CSSN         NOT NULL NUMBER(38) 
+MEALS_COMPD  NOT NULL NUMBER(38) 
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row updated.
+
+
+1 row updated.
+
+
+     TNAME TTIMESTAM NO_OF_CUSTOMERS  CHECK_AMT FOOD                                               DRINKS                                            
+---------- --------- --------------- ---------- -------------------------------------------------- --------------------------------------------------
+         1 16-DEC-18               4     130.42 Fajitas, Chips, Tacos                              Margaritas, Beer                                  
+         3 15-DEC-18               2      63.53 Chimichangas, Burrito, Salsa                       Beer, Tequila                                     
+        15 14-DEC-18               3      80.96 Enchiladas, Tacos, Guacamole                       Water, Soda                                       
+        12 13-DEC-18               5     236.42 Combo #5, Queso Verde, Taquitos                    Margaritas, Vodka                                 
+
+
+      BSSN HOURS_WORKED      TNAME TTIMESTAM FOOD_BUSSED                                        DRINKS_BUSSED                                      TABLES_BUSSED
+---------- ------------ ---------- --------- -------------------------------------------------- -------------------------------------------------- -------------
+      1234          5.5          1 16-DEC-18 Enchiladas, Tacos, Guacamole                       Water, Soda                                                   25
+      3245          4.3          3 15-DEC-18 Combo #5, Queso Verde, Taquitos                    Margaritas, Vodka                                             18
+      4290          6.7         15 14-DEC-18 Chimichangas, Burrito, Salsa                       Beer, Tequila                                                 30
+      5626          3.9         12 13-DEC-18 Fajitas, Chips, Tacos                              Margaritas, Beer                                              21
+
+
+      HSSN HOURS_WORKED      TNAME TTIMESTAM TABLES_SAT
+---------- ------------ ---------- --------- ----------
+      3280          4.1          1 16-DEC-18         45
+      3974         10.7          3 15-DEC-18         61
+       834            2         15 14-DEC-18         97
+      1786          8.4         12 13-DEC-18         31
+
+
+      TSSN HOURS_WORKED      TNAME TTIMESTAM FOOD_ORDERED                                       DRINKS_ORDERED                                     DRINKS_MADE
+---------- ------------ ---------- --------- -------------------------------------------------- -------------------------------------------------- -----------
+      5143         11.2          1 16-DEC-18 Chimichangas, Burrito, Salsa                       Mai Tai, Mojito, Banacoloda, Vodkarita                     162
+      1987         15.3          3 15-DEC-18 Enchiladas, Tacos, Guacamole                       Water, Soda                                                203
+        63          9.9         15 14-DEC-18 Fajitas, Chips, Tacos                              Margaritas, Beer                                            97
+      2008          5.4         12 13-DEC-18 Combo #5, Queso Verde, Taquitos                    Margaritas, Vodka                                           61
+
+
+      CSSN HOURS_WORKED      TNAME TTIMESTAM FOOD_MADE                                          ORDERS_PREPARED
+---------- ------------ ---------- --------- -------------------------------------------------- ---------------
+      1817         20.2          1 16-DEC-18 Combo #5, Queso Verde, Taquitos                                 30
+      7089         10.3          3 15-DEC-18 Enchiladas, Tacos, Guacamole                                   103
+      4390         15.4         15 14-DEC-18 Chimichangas, Burrito, Salsa                                    47
+      1950         16.7         12 13-DEC-18 Soup, Ceviche, Kahlua Flan, Churros                             24
+
+
+      SSSN HOURS_WORKED      TNAME TTIMESTAM     ORDERS       BSSN       HSSN FOOD_ORDERED                                       DRINKS_ORDERED                                           TSSN      SALES
+---------- ------------ ---------- --------- ---------- ---------- ---------- -------------------------------------------------- -------------------------------------------------- ---------- ----------
+      6250         11.1          1 16-DEC-18         24       1234       3280 Chimichangas, Burrito, Salsa                       Beer, Tequila                                            5143     900.32
+      1921          8.6          3 15-DEC-18         36       3245       3974 Combo #5, Queso Verde, Taquitos                    Margaritas, Vodka                                        1987    1241.33
+       891          9.2         15 14-DEC-18         18       4290        834 Enchiladas, Tacos, Guacamole                       Water, Soda                                                63      701.9
+      1249          7.1         12 13-DEC-18         29       5626       1786 Fajitas, Chips, Tacos                              Margaritas, Beer                                         2008     883.56
+
+
+      MSSN HOURS_WORKED       HSSN       BSSN       TSSN       SSSN       CSSN MEALS_COMPD
+---------- ------------ ---------- ---------- ---------- ---------- ---------- -----------
+      7214         56.6       3280       1234       5143       6250       1817           3
+      1254         51.2       3974       3245       1987       1921       7089           2
+      9012         49.2        834       4290         63        891       4390           2
+      8123         12.4       1786       5626       2008       1249       1950           4
+
+
+      SSSN       HSSN       BSSN HOURS_WORKED      SALES
+---------- ---------- ---------- ------------ ----------
+      6250       3280       1234         11.1     900.32
+      1921       3974       3245          8.6    1241.33
+       891        834       4290          9.2      701.9
+      1249       1786       5626          7.1     883.56
+
+
+      MSSN       HSSN       BSSN       TSSN       SSSN       CSSN HOURS_WORKED MEALS_COMPD
+---------- ---------- ---------- ---------- ---------- ---------- ------------ -----------
+      7214       3280       1234       5143       6250       1817         56.6           3
+      1254       3974       3245       1987       1921       7089         51.2           2
+      9012        834       4290         63        891       4390         49.2           2
+      8123       1786       5626       2008       1249       1950         12.4           4
+
+
+     TNAME TTIMESTAM NO_OF_CUSTOMERS  CHECK_AMT
+---------- --------- --------------- ----------
+         1 16-DEC-18               4     130.42
+         3 15-DEC-18               2      63.53
+        15 14-DEC-18               3      80.96
+        12 13-DEC-18               5     236.42
+
+
+Table MANAGERS dropped.
+
+
+Table SERVERS dropped.
+
+
+Table COOKS dropped.
+
+
+Table BARTENDERS dropped.
+
+
+Table HOSTS dropped.
+
+
+Table BUSSERS dropped.
+
+
+Table RESTAURANT_TABLE dropped.
+
