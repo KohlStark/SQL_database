@@ -1,6 +1,9 @@
 /*
 Kohl Stark
-kgstark1@asu.edu
+SQL_Database
+12/2018
+insert.sql
+This file contains the scripts to populate the tables created in the ddl.sql file
 */
 
 /*

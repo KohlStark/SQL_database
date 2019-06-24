@@ -1,6 +1,10 @@
 /*
 Kohl Stark
-kgstark1@asu.edu
+SQL_Database
+12/2018
+ddl.sql
+This file is repsonsilbe for creating the tables with their appropriate data types, setting the primary keys,
+and setting the foreign keys.
 */
 
 /* script to create a table table */
@@ -14,7 +18,7 @@ CREATE TABLE Restaurant_Table
 	Drinks			VARCHAR(50)		NOT NULL,
 	PRIMARY KEY (Tname, tTimestamp)
 
-);
+); 
 SHOW ERRORS;
 
 /* script to create a Bussers table */
