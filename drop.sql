@@ -2,7 +2,7 @@
 Kohl Stark
 SQL_Database
 12/2018
-ddl.sql
+drop.sql
 This script is to drop all objects in the database
 */
 
