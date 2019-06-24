@@ -1,12 +1,10 @@
 /*
 Kohl Stark
-kgstark1@asu.edu
+SQL_Database
+12/2018
+ddl.sql
+This script is to drop all objects in the database
 */
-
-/*
-** ----------------------------------------------------------------------------
-** script to drop all objects in the database
-** --------------------------------------------------------------------------*/
 
 -- Tables 
 DROP TABLE Managers purge;
