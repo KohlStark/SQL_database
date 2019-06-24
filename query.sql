@@ -1,6 +1,9 @@
 /*
 Kohl Stark
-kgstark1@asu.edu
+SQL_Database
+12/2018
+insert.sql
+This file contains the scripts to query the populated tables
 */
 
 /*
@@ -11,7 +14,7 @@ Their hours worked for the night, and their total Sales for their shift.
 ** --------------------------------------------------------------------------*/
 
 SELECT Servers.SSSN, Servers.HSSN, Servers.BSSN, Servers.Hours_worked, Servers.Sales 
-FROM (Hosts INNER JOIN server ON Hosts.HSSN = Servers.HSSN) INNER JOIN Bussers ON Bussers.BSSN = Servers.BSSN; 
+FROM (Hosts INNER JOIN Servers ON Hosts.HSSN = Servers.HSSN) INNER JOIN Bussers ON Bussers.BSSN = Servers.BSSN; 
 
 /*
 ** ----------------------------------------------------------------------------
@@ -31,5 +34,5 @@ Pull up a specific Restaurant_Table which lists the Tname, tTimestamp, No_of_cus
 and the Check_amt.
 ** --------------------------------------------------------------------------*/
 
-SELECT FROM Restaurant_Table.Tname, Restaurant_Table.tTimestamp, Restaurant_Table.No_of_customers, Restaurant_Table.Check_amt 
+SELECT Restaurant_Table.Tname, Restaurant_Table.tTimestamp, Restaurant_Table.No_of_customers, Restaurant_Table.Check_amt 
 FROM Restaurant_Table;
