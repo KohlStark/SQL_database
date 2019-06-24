@@ -2,7 +2,7 @@
 Kohl Stark
 SQL_Database
 12/2018
-insert.sql
+query.sql
 This file contains the scripts to query the populated tables
 */
 
