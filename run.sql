@@ -1,6 +1,10 @@
 /*
 Kohl Stark
-kgstark1@asu.edu
+SQL_Database
+12/2018
+run.sql
+This file contains the scripts to run the files to create the tables, populate them, query them, and finally
+drop them
 */
 
 -- create tables
